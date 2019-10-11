@@ -22,9 +22,6 @@ To learn more about the mentioned above tools and technologies -  please check s
 
 # TODO
 
-- [ ] Create a sample project, ie null provider
-- [ ] Compile a custom plugin
-- [ ] Copy the custom plugin to the required path
 - [ ] Update main.tf to use the custom plugin
 - [ ] Test it works.
 
@@ -32,3 +29,6 @@ To learn more about the mentioned above tools and technologies -  please check s
 # DONE
 
 - [x] Setup a Vagrantfile that installs golang
+- [x] Create a sample project, ie null provider
+- [x] Compile a custom plugin
+- [x] Copy the custom plugin to the required path

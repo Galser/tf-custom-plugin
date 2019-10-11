@@ -9,7 +9,7 @@ GO_DISTRO="go1.13.linux-amd64.tar.gz"
 #sudo apt-get -y upgrade
 # install wget 
 which wget || (
-  sudo apt-get install wget
+  sudo apt-get install -y wget
 ) 
 # 2. Downloadn and install Go
 # wget -nv - here nv to avoid clutter on screen when provisioning  
