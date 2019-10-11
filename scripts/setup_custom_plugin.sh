@@ -5,7 +5,8 @@
 
 # 1. Install Git
 which git || (
-  sudo apt-get install -y git
+  sudo apt-get -qq install -y git
+  echo Installed wget  
 )
 
 # re-export go env vars for compile time
@@ -31,7 +32,7 @@ if [ $ret_code -ne 0 ]; then
 fi
 # 4. Make folder and link plugin
 mkdir -p $HOME/.terraform.d/plugins/
-[ -f $HOME/.terraform.d/plugins//terraform-provider-extip ] || (
+[ -f $HOME/.terraform.d/plugins/terraform-provider-extip ] || (
   ln -s $GOPATH/bin/terraform-provider-extip $HOME/.terraform.d/plugins/
 )
 
